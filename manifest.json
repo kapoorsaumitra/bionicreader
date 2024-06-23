@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Bionic Reader",
+    "version": "1.0",
+    "description": "Converts text on web pages to bionic readable content",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
